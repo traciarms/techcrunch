@@ -31,15 +31,6 @@ first organization as the main subject.
 * To run tests:
   * python3 test.py
 
-## csv_branch
-
-You can then navigate to the csv_branch and again run the program with
-the same command as above.  The output will be in the new requested format.
-
-This only required a one line change to the csv_header variable in the main
-method of the script.
-
-
 ## Notes
 
 I made the design decision to not scrape further pages since it would just
