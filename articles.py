@@ -182,10 +182,10 @@ class TechCrunchScraper:
 
 
 if __name__ == '__main__':
-    csv_header = ["company name",
-                  "company website",
-                  "article title",
-                  "article url"]
+    csv_header = ["article title",
+                  "article url",
+                  "company name",
+                  "company website"]
     csv_out = 'articles.csv'
 
     s = TechCrunchScraper(csv_out, csv_header)
