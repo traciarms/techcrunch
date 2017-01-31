@@ -16,6 +16,12 @@ class TechCrunchScraper:
     """
 
     def __init__(self, filename, header):
+        """
+        Initialize the Scraper with the out filename and the csv header, or
+        format of the csv file.
+        :param filename:
+        :param header:
+        """
         self.out_filename = filename
         self.csv_header = header
         self.request_header = {'User-agent': 'Mozilla/5.0 (Windows NT '
@@ -27,6 +33,7 @@ class TechCrunchScraper:
     def get_soup(self, url):
         """
         Make a GET request to a URL and return the soup.
+        :param url:
         :returns: requests' response -> soup.
         """
         response = requests.get(url, headers=self.request_header)
@@ -159,6 +166,7 @@ class TechCrunchScraper:
         (and scraped) I would then check for pagination and then iterate over
         the subsequent pages - gather links on each page and scrape the
         subsequent articles.
+        :param url:
         :return: None
         """
         soup = self.get_soup(url)
